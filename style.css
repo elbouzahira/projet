@@ -1,9 +1,7 @@
-html,
-body 
-
-body{background-color: blanchedalmond;}
+body{margin:0;background-color: blanchedalmond;}
 header{display:flex;
        flex-direction:row;
+       flex-wrap:wrap;
        align-items:center;
        gap: 20px;
        background-color:#f5e9dc;
@@ -23,12 +21,14 @@ header img{
     display:flex;
     flex-direction: row;
     gap:20px;
+    list-style: none;
     padding:0;
     margin: 0;
 }
 .hiha{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap:20px;
     list-style: none;
 }
@@ -92,122 +92,41 @@ header img{
       position: relative;
       top: 30px;
 }
+.zhiro{padding:0 26px 26px;}
 .cola{font-size:40px;
-    position: relative;
-      bottom: 26px;
-      margin: 26px;
+      margin: 26px 0 0;
 }
-.cila{position: relative;
-      bottom:50px;
-      margin: 26px;
+.cila{margin: 0 0 26px;}
+.cart{
+    display:flex;
+    flex-wrap:wrap;
 }
-.logo3{
+.service{
+    flex:1 1 180px;
+    padding:0 26px;
+}
+.service + .service{
+    border-left:2px solid gray;
+}
+.service img{
+    display:block;
+    width:100px;
     height:100px;
+    object-fit:cover;
     border-radius:50%;
-    position: relative;
-    bottom:80px;
-    margin: 26px;
 }
-.how{position: relative;
-     bottom:130px;
-     margin:26px;;
-}
-.lap{margin: 30px;
-    position: relative;
-    bottom: 150px;
+.service h3{margin:16px 0 4px;}
+.service p{margin:0;}
 
-}
-.ligne-verticale{width:2px;
-                 height: 150px;
-                 background-color: gray;
-                 margin:190px;
-                 position: relative;
-                 bottom: 500px;
-}
-.logo4{
-    height:100px;
-    border-radius:50%;
-    position: relative;
-    bottom:680px;
-    margin: 26px;
-}
-.haw{margin:26px;
-     position: relative;
-     bottom:730px;
-}
-.lop{margin:26px;
-     position: relative;
-     bottom: 750px;;
-}
-.ligne-verticale1{width:2px;
-                 height: 150px;
-                 background-color: gray;
-                 margin:190px;
-                 position: relative;
-                 bottom: 1100px;
-}
-.logo5{
-    height:100px;
-    border-radius:50%;
-    position: relative;
-    bottom:775px;
-    margin: 26px;
-}
-.paw{margin:20px;
-     position: relative;
-     bottom:820px;
-}
-.det{margin:30px;
-     position: relative;
-     bottom: 834px;
-}
-
-.ligne-verticale2{width:2px;
-                 height: 150px;
-                 background-color: gray;
-                 margin:190px;
-                 position: relative;
-                 bottom: 1700px;
-}
-.logo6{
-    height:100px;
-    border-radius:50%;
-    position: relative;
-    bottom:775px;
-    margin: 26px;
-}
-.raw{margin:20px;
-     position: relative;
-     bottom:820px;
-}
-.Coiffure{margin:30px;
-     position: relative;
-     bottom: 834px;
-}
-
-.ligne-verticale3{width:2px;
-                 height: 150px;
-                 background-color: gray;
-                 margin:190px;
-                 position: relative;
-                 bottom: 2300px;
-}
-.logo7{ height:100px;
-    border-radius:50%;
-    position: relative;
-    bottom:775px;
-    margin: 26px;
-}
-.vow{margin:20px;
-      position: relative;
-     bottom:820px;
-}
-.lip{margin:30px;
-     position: relative;
-     bottom: 840px;
-}
-
-
-.cart {
-    display: flex;
+@media (max-width: 768px){
+    .zahira{flex-direction:column;}
+    .div3{width:auto;}
+    .wuwu{top:0;}
+    .Voir{top:0; display:inline-block; margin:0 16px 20px;}
+    .cart{flex-direction:column;}
+    .service{padding:20px 0;}
+    .service + .service{
+        border-left:0;
+        border-top:2px solid gray;
+    }
 }

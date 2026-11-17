@@ -1,6 +1,7 @@
-body{background-color: blanchedalmond;}
+body{margin:0;background-color: blanchedalmond;}
 header{display:flex;
        flex-direction:row;
+       flex-wrap:wrap;
        align-items:center;
        gap: 20px;
        background-color:#f5e9dc;
@@ -20,12 +21,14 @@ header img{
     display:flex;
     flex-direction: row;
     gap:20px;
+    list-style: none;
     padding:0;
     margin: 0;
 }
 .hiha{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap:20px;
     list-style: none;
 }
